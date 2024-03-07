@@ -2,7 +2,7 @@ import sqlalchemy
 from sqlalchemy.orm import sessionmaker
 from models import Publisher, Book, Stock, Shop, Sale
 
-# Установка соединения с базой данных
+#Установка соединения с базой данных
 def create_connection(sqlsystem, login, password, host, port, db_name):
     try:
         engine = sqlalchemy.create_engine(f'{sqlsystem}://{login}:{password}@{host}:{port}/{db_name}')
